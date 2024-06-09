@@ -1,0 +1,99 @@
+.wrapper {
+	background-color: rgb(255, 255, 255);
+	height: 260px;
+	width: 206px;
+	padding: 30px;
+	border: 3px solid #F3F3F3 ;
+	border-radius: 40px;
+	transition: box-shadow 1s;
+}
+.wrapper:hover {
+	box-shadow: 0 0 40px #F3F3F3 ;
+}
+
+.likes {
+	background-color: #fff;
+	border: 2px solid #F3F3F3;
+	border-radius: 20%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding: 10px;
+	cursor: pointer;
+	transition: 0.5s all;
+	position: relative;
+	.svg {
+		transform: scale(170%);
+		fill: #F3F3F3;
+	}
+}
+
+.likes:hover {
+	background-color: #FF8585;
+	.svg {
+		fill: #fff;
+	}
+}
+.isLike {
+	background-color: #FF8585;
+	.svg {
+		fill: #fff;
+	}
+}
+.main {
+	img {
+		height: 133px;
+	}
+	.desc {
+		font-size: 17px;
+		margin: 0;
+		p {
+			margin: 0;
+		}
+	}
+	.price {
+		margin-top: 20px;
+		span {
+			color: #b6b6b6;
+		}
+		p {
+			margin: 0;
+			font-weight: bold;
+		}
+	}
+	.buy {
+		margin-top: 20px;
+		button {
+			border: 2px solid #9B9B9B;
+			background-color: #fff;
+			border-radius: 20%;
+			cursor: pointer;
+			padding: 5px 6px;
+			transition: all 0.5s;
+			height: 40px;
+			width: 40px;
+			.svg {
+				fill: #9B9B9B;
+				height: 20px;
+				width: 20px;
+				transform: scale(150%);
+			}
+		}
+		button:hover {
+			background-color: #78E78C;
+			.svg{
+				fill: #fff;
+			}
+		}
+		
+		img {
+			height: 20px;
+		}
+	}
+	.isBuy {
+		button {
+			background: #78E78C;
+			border-color: transparent;
+		}
+	}
+}
